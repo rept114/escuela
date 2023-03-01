@@ -8,12 +8,14 @@
 </head>
 <body>
     <h1>Lista de Alumnos</h1>
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
+    <a href="{{route('alumnos.create')}}">Crear alumno</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
     <tbody>
         @foreach($alumnos as $alumno)
         <tr>
@@ -22,6 +24,6 @@
         </tr>
         @endforeach
     </tbody>
-    
+    </table>
 </body>
 </html>
